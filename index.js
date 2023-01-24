@@ -2,12 +2,12 @@ var player1 =window.prompt("enter player 1 name");
 var player2 =window.prompt("enter player 2 name");
 document.getElementById("prom1").innerHTML= player1;
 document.getElementById("prom2").innerHTML= player2;
-document.getElementById("btn2").addEventListener("click",function roll() {
+document.getElementById("btn1").addEventListener("click",function roll() {
   
 var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
 var randomDiceImage1 = "images/dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
 
-var randomImageSource = "images/dice" + randomDiceImage; //images/dice1.png - images/dice6.png
+var randomImageSource = "images" + randomDiceImage; //images/dice1.png - images/dice6.png
 var image1 = document.querySelectorAll("img")[0];
 image1.setAttribute("src", randomImageSource);
 
@@ -25,13 +25,13 @@ else {
   document.querySelector("h1").innerHTML = "roll again";
 }
 });
-document.getElementById("btn1").addEventListener("click",function roll() {
+document.getElementById("btn2").addEventListener("click",function roll() {
   
   var randomNumber2 = Math.floor(Math.random() * 6) + 1; //1-6
   
   var randomDiceImage = "images/dice" + randomNumber2 + ".png"; //dice1.png - dice6.png
   
-  var randomImageSource = "images/dice" + randomDiceImage; //images/dice1.png - images/dice6.png
+  var randomImageSource = "images" + randomDiceImage; //images/dice1.png - images/dice6.png
   
   var image2 = document.querySelectorAll("img")[0];
   
