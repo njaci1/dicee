@@ -31,7 +31,7 @@ document.getElementById("btn2").addEventListener("click",function roll() {
   
   var randomDiceImage = "images/dice" + randomNumber2 + ".png"; //dice1.png - dice6.png
   
-  var randomImageSource = "images" + randomDiceImage; //images/dice1.png - images/dice6.png
+  var randomImageSource = randomDiceImage; //images/dice1.png - images/dice6.png
   
   var image2 = document.querySelectorAll("img")[0];
   
